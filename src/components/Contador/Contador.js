@@ -14,11 +14,11 @@ const Contador = () => {
 
 
 
-	return (<div>
-		<button onClick={() => addOne()}>Incrementar</button>
+	return (<div className="App">
+		<button className="btn-add" onClick={() => addOne()}>Incrementar</button>
 
-		{contador}
-		<button onClick={() => restOne()}>Disminuir</button>
+		<div className="contador">{contador}</div>
+		<button className="btn-rest" onClick={() => restOne()}>Disminuir</button>
 
 	</div>)
 }
